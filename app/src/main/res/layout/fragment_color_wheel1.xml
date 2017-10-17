@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jacksondanny.myapp2.ColorWheel1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px">
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                app:srcCompat="@drawable/colourwheel"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_width="700px"
+                android:layout_height="700px" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:color/holo_red_light"
+                android:id="@+id/imageView4"
+                android:layout_marginLeft="100px" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10px">
+
+            <TextView
+                android:text="Selection color by color wheel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/textView2"
+                android:textSize="22sp"
+                android:layout_below="@+id/seekBar1"
+                android:layout_centerHorizontal="true"
+                android:typeface="sans"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/black" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:id="@+id/seekBar1"
+                style="@android:style/Widget.Holo.SeekBar"
+                android:thumbTintMode="src_in"
+                android:alpha="1"
+                android:layout_below="@+id/imageView1"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="B = 0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/zText"
+                android:textAlignment="textStart"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:typeface="normal"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/gText"
+                android:layout_alignStart="@+id/gText"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/myOwnBlue" />
+
+            <TextView
+                android:text="G = 0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gText"
+                android:textAlignment="textStart"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:typeface="sans"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/rText"
+                android:layout_alignStart="@+id/rText"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/myOwnGreen" />
+
+            <Button
+                android:text="centerAxis"
+                android:layout_height="0dp"
+                android:id="@+id/button3"
+                android:layout_above="@+id/zText"
+                android:layout_centerHorizontal="true"
+                android:layout_width="0dp" />
+
+            <FrameLayout
+                android:id="@+id/myfrlay"
+                android:layout_width="206px"
+                android:layout_height="206px"
+                android:layout_alignTop="@+id/rText"
+                android:layout_toStartOf="@+id/button3"
+                android:layout_marginRight="40dp">
+
+                <ImageView
+                    android:layout_width="206px"
+                    android:layout_height="206px"
+                    app:srcCompat="@color/colorBottomNavigationAccent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageView7" />
+
+                <ImageView
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    app:srcCompat="@color/cardview_dark_background"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageView6" />
+
+            </FrameLayout>
+
+            <TextView
+                android:text="R = 0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rText"
+                android:textAlignment="textStart"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:typeface="normal"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/myOwnRed"
+                android:layout_marginTop="14dp"
+                android:layout_below="@+id/textView2"
+                android:layout_toEndOf="@+id/button3"
+                android:layout_marginStart="60dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

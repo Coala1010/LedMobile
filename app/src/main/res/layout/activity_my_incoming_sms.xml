@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_incoming_call"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jacksondanny.myapp2.MyIncomingCall">
+
+    <TextureView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/myBack" />
+
+    <TextView
+        android:text="Phone Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/phoneNumber"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:typeface="normal"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/ame_default_cluster_text_shadow_color" />
+
+    <ImageView
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/usericon"
+        android:id="@+id/img_profile"
+        android:layout_marginTop="38dp"
+        android:layout_width="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Phone Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/smstext"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:typeface="normal"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/ame_default_cluster_text_shadow_color"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

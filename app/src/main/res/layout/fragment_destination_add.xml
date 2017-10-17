@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jacksondanny.myapp2.destination_add">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="Select Color:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:typeface="normal"
+        android:textColor="@android:color/black"
+        android:layout_alignTop="@+id/myfrlay"
+        android:layout_alignEnd="@+id/txt_title"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:text="Add Destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:id="@+id/txt_title1"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:typeface="normal"
+        android:fontFamily="sans-serif"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:id="@+id/txt_address"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:typeface="normal"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/txt_title"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/back"
+        android:lineSpacingExtra="8sp"
+        android:padding="5dp"
+        android:layout_width="700px"
+        android:layout_height="300px" />
+
+    <TextView
+        android:text="Destination Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/txt_title"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:typeface="normal"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/txt_title1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp" />
+
+    <Button
+        android:text="Back"
+        android:id="@+id/btn_back"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/myfrlay"
+        android:layout_centerHorizontal="true"
+        android:typeface="normal"
+        android:layout_height="90px"
+        android:layout_width="220px" />
+
+    <Button
+        android:text="Add"
+        android:id="@+id/btn_add"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/myfrlay"
+        android:layout_toEndOf="@+id/btn_back"
+        android:layout_marginStart="13dp"
+        android:typeface="normal"
+        android:layout_height="90px"
+        android:layout_width="220px" />
+
+    <FrameLayout
+        android:id="@+id/myfrlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_below="@+id/txt_address"
+        android:layout_toEndOf="@+id/textView12"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="206px"
+            android:layout_height="206px"
+            app:srcCompat="@color/colorBottomNavigationAccent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:id="@+id/imageView7" />
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            app:srcCompat="@color/cardview_dark_background"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:id="@+id/imageView6" />
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jacksondanny.myapp2.ColorpickerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_wheel"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="?android:attr/colorPrimaryDark"
+            android:text="COLOR WHEEL"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:layout_marginBottom="74dp"
+            android:layout_alignBottom="@+id/btn_camera"
+            android:layout_alignStart="@+id/btn_camera" />
+
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="LIVE CAMERA"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:layout_marginBottom="32dp"
+            android:layout_above="@+id/btn_file"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btn_file"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="FILE SELECT"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/btn_camera" />
+    </RelativeLayout>
+
+</RelativeLayout>

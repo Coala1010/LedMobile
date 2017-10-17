@@ -1,0 +1,166 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jacksondanny.myapp2.AccelerationFragment"
+    android:id="@+id/myRelative">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/topFrame"
+        android:layout_height="350px">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:id="@+id/imageView1"
+            android:layout_height="450px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center"
+            android:layout_height="446px" />
+    </FrameLayout>
+
+    <!-- we add graph view to display -->
+
+    <TextView
+        android:text="Control accelerometer intensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="18sp"
+        android:typeface="sans"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/seekBar2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Reset"
+        android:id="@+id/btn_reset"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="0dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:textAlignment="center"
+        android:layout_height="65px"
+        android:layout_width="220px"
+        android:typeface="normal" />
+
+    <TextView
+        android:text="R = 255"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gText"
+        android:textAlignment="viewStart"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:typeface="sans"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/rText"
+        android:layout_alignStart="@+id/rText" />
+
+    <TextView
+        android:text="R = 255"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zText"
+        android:textAlignment="viewStart"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:typeface="sans"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/gText"
+        android:layout_alignStart="@+id/gText" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:background="#ff999999"
+        android:layout_below="@+id/topFrame"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="300px" />
+
+    <SeekBar
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar2"
+        android:max="100"
+        style="@android:style/Widget.Holo.SeekBar"
+        android:thumbTintMode="src_in"
+        android:layout_width="700px"
+        android:layout_alignTop="@+id/txt_percent"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="0%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_percent"
+        android:textSize="16sp"
+        android:typeface="sans"
+        android:textAlignment="textStart"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/graph"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp" />
+
+    <FrameLayout
+        android:id="@+id/myfrlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rText"
+        android:layout_toStartOf="@+id/btn_reset"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:layout_width="206px"
+            android:layout_height="206px"
+            app:srcCompat="@color/colorBottomNavigationAccent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:id="@+id/imageView7" />
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            app:srcCompat="@color/cardview_dark_background"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:id="@+id/imageView6" />
+
+    </FrameLayout>
+
+    <TextView
+        android:text="R = 255"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rText"
+        android:textAlignment="viewStart"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:typeface="sans"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="30dp"
+        android:layout_alignBottom="@+id/btn_reset"
+        android:layout_toEndOf="@+id/btn_reset" />
+
+</RelativeLayout>

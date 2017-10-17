@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_color1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jacksondanny.myapp2.ColorWheel2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                app:srcCompat="@drawable/colourwheel"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_width="700px"
+                android:layout_height="700px"
+                srcCompat="@drawable/colourwheel" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:color/holo_red_light"
+                android:id="@+id/imageView4"
+                android:layout_marginLeft="100px" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="Select"
+                android:id="@+id/btn_select"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="0dp"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="sans-serif-medium"
+                android:layout_height="85px"
+                android:layout_width="130px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="70dp"
+                android:layout_toStartOf="@+id/btn_cancel" />
+
+            <Button
+                android:text="Cancel"
+                android:id="@+id/btn_cancel"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="0dp"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="70dp"
+                android:layout_height="85px"
+                android:layout_width="130px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:text="B = 0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bText"
+                android:textAlignment="textStart"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:typeface="normal"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/gText"
+                android:layout_alignStart="@+id/gText"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:text="G = 0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gText"
+                android:textAlignment="textStart"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:typeface="normal"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/rText"
+                android:layout_alignStart="@+id/rText"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:text="R = 0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rText"
+                android:textAlignment="textStart"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"
+                android:typeface="normal"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/BottomBarBackgroundColor"
+                android:layout_alignBaseline="@+id/centerAxis"
+                android:layout_alignBottom="@+id/centerAxis"
+                android:layout_toEndOf="@+id/centerAxis"
+                android:layout_marginLeft="60dp" />
+
+            <FrameLayout
+                android:id="@+id/myfrlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/rText"
+                android:layout_toStartOf="@+id/centerAxis"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="206px"
+                    android:layout_height="206px"
+                    app:srcCompat="@color/colorBottomNavigationAccent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageView7" />
+
+                <ImageView
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    app:srcCompat="@color/cardview_dark_background"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageView6" />
+
+            </FrameLayout>
+
+            <Button
+                android:text="Button"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/centerAxis"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

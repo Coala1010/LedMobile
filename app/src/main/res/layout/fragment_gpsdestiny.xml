@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GPSDestinyFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:uiCompass="true"
+        app:mapType= "normal"
+        app:uiRotateGestures="true"
+        app:uiScrollGestures="true"
+        app:uiTiltGestures="true"
+        app:uiZoomControls="true"
+        app:uiZoomGestures="true" /-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Destination List"
+            android:id="@+id/btn_list"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif-medium"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="75dp"
+            android:layout_width="500px"
+            android:layout_height="100px" />
+
+        <!--Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:id="@+id/switch1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="27dp"
+            android:checked="true" /-->
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:id="@+id/switch1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="27dp"
+            android:checked="true"
+            android:theme="@style/SCBSwitch" />
+
+        <TextView
+            android:text="Long press on the new destination\n              you want to add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/switch1"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView4"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif"
+            android:typeface="normal"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <ImageView
+            android:layout_above="@+id/btn_list"
+            android:layout_alignEnd="@+id/btn_list"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/imgMyLocation"
+            android:background="@drawable/btn_crrent_point"
+            android:layout_height="150px"
+            android:layout_width="140px" />
+
+        <view
+            android:layout_width="wrap_content"
+            class="android.support.v4.widget.Space"
+            android:id="@+id/popupView"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+</FrameLayout>

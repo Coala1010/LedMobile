@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:text="Add Destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_addDestination"
+        android:background="@drawable/toproundbutton"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:typeface="normal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Set Start Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_setStartLocation"
+        android:background="@drawable/bottomroundbutton"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:typeface="normal"
+        android:layout_below="@+id/btn_addDestination"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Cancel"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:typeface="normal"
+        android:background="@drawable/mybutton"
+        android:layout_below="@+id/btn_setStartLocation"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:textStyle="normal|bold" />
+</RelativeLayout>

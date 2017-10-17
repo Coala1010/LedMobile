@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/searchLayout">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7">
+
+            <EditText
+                android:id="@+id/autocomplete_places"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="9dp"
+                android:singleLine="true"
+                android:background="@drawable/edit_text_style"
+                android:textColorHint="@color/grey"
+                android:hint="@string/autocomplete_hint"
+                android:drawableLeft="@drawable/search"
+
+                android:drawablePadding="9dp"
+                android:textColor="@android:color/primary_text_light" />
+
+            <ImageView
+                android:id="@+id/cross"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/cross"
+                android:layout_alignTop="@+id/autocomplete_places"
+                android:layout_alignEnd="@+id/autocomplete_places"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="12dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_Cancel"
+            android:textSize="20sp"
+            android:typeface="normal"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/ame_default_cluster_circle_color_small"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:scrollbars="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

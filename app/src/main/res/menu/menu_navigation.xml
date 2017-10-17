@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/gpsItem"
+        android:title="@string/gps_destiny"
+        android:icon="@drawable/gps" />
+
+    <item
+        android:id="@+id/accelItem"
+        android:title="@string/accelerations"
+        android:icon="@drawable/acceloration" />
+
+    <item
+        android:id="@+id/colorItem"
+        android:title="@string/color_picker"
+        android:icon="@drawable/colorpicker" />
+
+    <item
+        android:id="@+id/identItem"
+        android:title="@string/indentify_call"
+        android:icon="@drawable/identifycall" />
+
+    <item
+        android:id="@+id/settingItem"
+        android:title="@string/settings"
+        android:icon="@drawable/setting" />
+
+</menu>

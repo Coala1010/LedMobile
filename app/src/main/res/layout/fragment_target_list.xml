@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jacksondanny.myapp2.TargetListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:text="Add"
+        android:id="@+id/btn_add"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:layout_height="90px"
+        android:layout_width="220px" />
+
+    <Button
+        android:text="Back"
+        android:id="@+id/btn_back"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/btn_add"
+        android:layout_marginTop="14dp"
+        android:layout_height="90px"
+        android:layout_width="220px" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/list_view"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="170px" />
+
+</RelativeLayout>

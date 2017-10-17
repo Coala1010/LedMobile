@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#027bfd</color>
+    <color name="colorPrimaryDark">#ff3f00</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="BottomBarBackgroundColor">#252525</color>
+    <color name="BottomBarItemColor">#8e8e8e</color>
+    <color name="grey">#e3e3e3</color>
+    <color name="myOwnRed">#ff0000</color>
+    <color name="myOwnGreen">#00ff00</color>
+    <color name="myOwnBlue">#0000ff</color>
+</resources>

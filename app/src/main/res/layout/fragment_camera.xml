@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jacksondanny.myapp2.CameraFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageView1"
+            android:screenOrientation="portrait"
+            android:layout_height="match_parent" />
+
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/surfaceView1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="G = 255"
+            android:layout_marginTop="21dp"
+            android:id="@+id/textView7"
+            android:layout_below="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="30px"
+            android:paddingTop="4px"
+            android:background="@drawable/greenrect"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="viewStart"
+            android:typeface="sans"
+            android:fontFamily="sans-serif"
+            android:layout_width="250px"
+            android:layout_height="83px" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/pointer"
+            android:id="@+id/imageView5"
+            android:layout_above="@+id/linearLayout3"
+            android:layout_toStartOf="@+id/linearLayout3"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="61dp" />
+
+        <TextView
+            android:text="R = 255"
+            android:id="@+id/textView5"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/redrect"
+            android:paddingLeft="30px"
+            android:paddingTop="4px"
+            android:layout_marginLeft="40dp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="viewStart"
+            android:typeface="sans"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="59dp"
+            android:fontFamily="sans-serif"
+            android:layout_width="250px"
+            android:layout_height="83px" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/btn_capture"
+            android:background="@drawable/camerashot"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="B = 255"
+            android:id="@+id/textView8"
+            android:layout_marginTop="21dp"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="30px"
+            android:paddingTop="4px"
+            android:background="@drawable/bluerect"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="viewStart"
+            android:typeface="sans"
+            android:fontFamily="sans-serif"
+            android:layout_width="250px"
+            android:layout_height="83px"
+            android:layout_below="@+id/textView7"
+            android:layout_alignStart="@+id/textView7" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="27dp"
+            android:paddingBottom="30px"
+            android:layout_width="210px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="65dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <FrameLayout
+                        android:layout_width="206px"
+                        android:layout_height="206px">
+
+
+                        <ImageView
+                            android:layout_width="206px"
+                            android:layout_height="206px"
+                            app:srcCompat="@color/colorBottomNavigationAccent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:id="@+id/imageView7" />
+
+                        <ImageView
+                            android:layout_width="200px"
+                            android:layout_height="200px"
+                            app:srcCompat="@android:color/black"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:id="@+id/imageView6" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:text="Picked Color"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:id="@+id/textView10"
+                        android:layout_weight="0.7"
+                        android:textStyle="normal|bold"
+                        android:textColor="@color/colorAccent"
+                        android:typeface="sans"
+                        android:fontFamily="sans-serif"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

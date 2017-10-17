@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jacksondanny.myapp2.MenuActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container">
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/bottomNavigationView"
+        app:menu="@menu/menu_navigation"
+        app:itemIconTint="@xml/drawer_item"
+        app:itemTextColor="@xml/drawer_item"
+        app:itemBackground="@color/BottomBarBackgroundColor"
+        android:background="@color/BottomBarBackgroundColor"
+        android:fitsSystemWindows="true">
+
+    </android.support.design.widget.BottomNavigationView>
+
+
+</android.support.design.widget.CoordinatorLayout>
